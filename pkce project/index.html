@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <h1>Online PKCE Generator Tool</h1>
+        <p>An online tool to generate code verifier and code challenge for OAuth with PKCE.</p>
+    </div>
+</header>
+<main class="main">
+    <div class="container">
+        <div class="box">
+            <form action="">
+                <label for="code_verifier" class="text-title">Code Verifier</label>
+                <p>
+                    This tool serves as an example implementation or for sending manual requests. Never reuse code verifier
+                    values.
+                </p>
+                <textarea class="textarea" id="code_verifier" name="phone" rows="2" placeholder="OAuth PKCE Code Verifier" type="text"></textarea>
+                <h3>Code Challenge</h3>
+                <p>(To be generated)
+                </p>
+                <button class="btn is-link">
+                    Generate Code Challenge
+                </button>
+                <button class="btn is-text">
+                    Generate Code Verifier
+                </button>
+            </form>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+</footer>
+<script src="/js/app.js"></script>
+</body>
+</html>
+
